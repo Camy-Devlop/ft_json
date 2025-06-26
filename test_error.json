@@ -1,0 +1,76 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Alice",
+      "groups": [
+        {
+          "group_id": "g1",
+          "permissions": [
+            {
+              "perm": "read",
+              "granted": true
+            },
+            {
+              "perm": "write",
+              "granted": false
+            }
+          ]
+        },
+        {
+          "group_id": "g2",
+          "permissions": [
+            {
+              "perm": "delete",
+              "granted": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Bob",
+      "groups": [
+        {
+          "group_id": "g3",
+          "permissions": [
+            {
+              "perm": "execute",
+              "granted": true
+            },
+            {
+              "perm": "modify",
+              "granted": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "config": {
+    "version": "1.0",
+    "features": {
+      "logging": {
+        "enabled": true,
+        "levels": [
+          "info",
+          "debug",
+          "error"
+        ]
+      },
+      "network": {
+        "endpoints": [
+          {
+            "host": "localhost",
+            "port": 8080
+          },
+          {
+            "host": "api.example.com",
+            "port": 443
+          }
+        ]
+      }
+    }
+  }
+}
