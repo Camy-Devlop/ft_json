@@ -1,18 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   jsonft.h                                           :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: isadbaib <isadbaib@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/27 02:05:04 by isadbaib          #+#    #+#             */
-/*   Updated: 2025/06/27 02:07:55 by isadbaib         ###   ########.fr       */
+/*   Created: 2024/10/19 18:50:28 by isadbaib          #+#    #+#             */
+/*   Updated: 2024/10/19 18:50:32 by isadbaib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef JSONFT_H
-# define JSONFT_H
+#include "../../include/libft.h"
 
-# include "library_ft.h"
+int	ft_strcmp(const char *s1, const char *s2)
+{
+	int	i;
 
-#endif
+	i = 0;
+	if (!s1 || !s2)
+		return (0);
+	while ((s1[i] && s2[i]) && s1[i] == s2[i])
+		i++;
+	return (s1[i] - s2[i]);
+}

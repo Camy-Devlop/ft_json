@@ -1,18 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   jsonft.h                                           :+:      :+:    :+:   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: isadbaib <isadbaib@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/27 02:05:04 by isadbaib          #+#    #+#             */
-/*   Updated: 2025/06/27 02:07:55 by isadbaib         ###   ########.fr       */
+/*   Created: 2024/10/19 18:43:59 by isadbaib          #+#    #+#             */
+/*   Updated: 2024/10/19 18:44:03 by isadbaib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef JSONFT_H
-# define JSONFT_H
+#include "../../include/libft.h"
 
-# include "library_ft.h"
-
-#endif
+int	ft_isalnum(int c)
+{
+	return (ft_isalpha(c) || ft_isdigit(c));
+}
+/*
+int main()
+{
+	//char *d ="bonjour £ éé1123";
+	int i = 0;
+	while (i <= 127)
+	{
+		printf("%c officiel %d\n",i,isalnum(i));
+		printf("  copy     %d\n",ft_isalnum(i));
+		i++;
+	}
+	return 0;
+}*/

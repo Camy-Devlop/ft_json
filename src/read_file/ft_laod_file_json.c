@@ -1,18 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   jsonft.h                                           :+:      :+:    :+:   */
+/*   ft_laod_file_json.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: isadbaib <isadbaib@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/27 02:05:04 by isadbaib          #+#    #+#             */
-/*   Updated: 2025/06/27 02:07:55 by isadbaib         ###   ########.fr       */
+/*   Created: 2025/06/27 01:50:52 by isadbaib          #+#    #+#             */
+/*   Updated: 2025/06/27 02:07:41 by isadbaib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef JSONFT_H
-# define JSONFT_H
+#include "../../include/jsonft.h"
 
-# include "library_ft.h"
+size_t	ft_get_nb_line()
+{
+	
+}
 
-#endif
+char	*ft_loadin

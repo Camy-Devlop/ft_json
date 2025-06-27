@@ -1,18 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   jsonft.h                                           :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: isadbaib <isadbaib@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/27 02:05:04 by isadbaib          #+#    #+#             */
-/*   Updated: 2025/06/27 02:07:55 by isadbaib         ###   ########.fr       */
+/*   Created: 2024/10/19 18:54:07 by isadbaib          #+#    #+#             */
+/*   Updated: 2024/10/19 18:54:10 by isadbaib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef JSONFT_H
-# define JSONFT_H
+#include "../../include/libft.h"
 
-# include "library_ft.h"
+static int	ft_isupper(int c)
+{
+	return ('A' <= c && c <= 'Z');
+}
 
-#endif
+int	ft_tolower(int c)
+{
+	if (ft_isupper(c))
+		c += 32;
+	return (c);
+}

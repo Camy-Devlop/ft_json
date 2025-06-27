@@ -1,18 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   jsonft.h                                           :+:      :+:    :+:   */
+/*   ft_print_char.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: isadbaib <isadbaib@student.s19.be>         +#+  +:+       +#+        */
+/*   By: iadbaibi <iadbaibi@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/27 02:05:04 by isadbaib          #+#    #+#             */
-/*   Updated: 2025/06/27 02:07:55 by isadbaib         ###   ########.fr       */
+/*   Created: 2024/07/26 16:26:00 by iadbaibi          #+#    #+#             */
+/*   Updated: 2024/12/02 10:46:06 by isadbaib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef JSONFT_H
-# define JSONFT_H
+#include "../../../../include/ft_printf.h"
 
-# include "library_ft.h"
+int	ft_print_char(va_list *arg)
+{
+	char	c;
 
-#endif
+	c = va_arg(*arg, int);
+	return (write(1, &c, 1));
+}

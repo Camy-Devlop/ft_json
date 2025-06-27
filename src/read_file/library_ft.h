@@ -1,18 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   jsonft.h                                           :+:      :+:    :+:   */
+/*   library_ft.h                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: isadbaib <isadbaib@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/27 02:05:04 by isadbaib          #+#    #+#             */
-/*   Updated: 2025/06/27 02:07:55 by isadbaib         ###   ########.fr       */
+/*   Created: 2025/06/27 01:55:19 by isadbaib          #+#    #+#             */
+/*   Updated: 2025/06/27 02:08:01 by isadbaib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef JSONFT_H
-# define JSONFT_H
+#ifndef LIBRARY_FT_H
+# define LIBRARY_FT_H
 
-# include "library_ft.h"
+# include "errorft.h"
+# include "messageft.h"
+# include "structft.h"
+# include "../libft/libft.h"
+
 
 #endif

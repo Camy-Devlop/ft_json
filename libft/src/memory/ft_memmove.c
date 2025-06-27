@@ -1,18 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   jsonft.h                                           :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: isadbaib <isadbaib@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/27 02:05:04 by isadbaib          #+#    #+#             */
-/*   Updated: 2025/06/27 02:07:55 by isadbaib         ###   ########.fr       */
+/*   Created: 2024/10/19 18:48:36 by isadbaib          #+#    #+#             */
+/*   Updated: 2024/10/19 18:48:38 by isadbaib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef JSONFT_H
-# define JSONFT_H
+#include "../../include/libft.h"
 
-# include "library_ft.h"
+void	*ft_memmove( void *dest, const void *src, size_t size)
+{
+	char	*s;
+	char	*d;
 
-#endif
+	s = (char *)src;
+	d = (char *)dest;
+	if (s < d && d < s + size)
+	{
+		d += size;
+		s += size;
+		while (size--)
+			*--d = *--s;
+	}
+	else
+	{
+		while (size--)
+			*d++ = *s++;
+	}
+	return (dest);
+}
+/*//if( d < s && s < d + size )
+/{
+//	while (size--)
+//		*d++ = *s++;
+//}*/

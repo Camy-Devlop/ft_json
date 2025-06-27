@@ -1,18 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   jsonft.h                                           :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: isadbaib <isadbaib@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/27 02:05:04 by isadbaib          #+#    #+#             */
-/*   Updated: 2025/06/27 02:07:55 by isadbaib         ###   ########.fr       */
+/*   Created: 2024/10/19 18:44:57 by isadbaib          #+#    #+#             */
+/*   Updated: 2024/10/19 18:44:59 by isadbaib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef JSONFT_H
-# define JSONFT_H
+#include "../../include/libft.h"
 
-# include "library_ft.h"
-
-#endif
+int	ft_isprint(int c)
+{
+	return (32 <= c && c < 127);
+}
+/*
+int main()
+{
+	//char *d ="bonjour £ éé1123";
+	int i = 0;
+	while (i <= 127)
+	{
+		printf("%c = %d officiel %d\n",i,i,isprint(i));
+		printf("  copy     %d\n",ft_isprint(i));
+		i++;
+	}
+	return 0;
+}*/

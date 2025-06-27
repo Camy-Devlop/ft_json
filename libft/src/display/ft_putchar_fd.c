@@ -1,18 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   jsonft.h                                           :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: isadbaib <isadbaib@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/27 02:05:04 by isadbaib          #+#    #+#             */
-/*   Updated: 2025/06/27 02:07:55 by isadbaib         ###   ########.fr       */
+/*   Created: 2024/10/19 18:49:08 by isadbaib          #+#    #+#             */
+/*   Updated: 2024/10/19 18:49:10 by isadbaib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef JSONFT_H
-# define JSONFT_H
+#include "../../include/libft.h"
 
-# include "library_ft.h"
+void	ft_putchar_fd(char c, int fd)
+{
+	size_t	i;
 
-#endif
+	(void)i;
+	i = write(fd, &c, 1);
+}
+/*
+#include <stdio.h>
+int main()
+{
+	char c = 0;
+ft_putchar_fd(c,1);
+  return (0);
+}
+//gcc ft_putchar_fd.c -o a
+*/

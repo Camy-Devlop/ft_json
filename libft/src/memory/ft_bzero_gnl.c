@@ -1,18 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   jsonft.h                                           :+:      :+:    :+:   */
+/*   ft_bzero_gnl.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: isadbaib <isadbaib@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/27 02:05:04 by isadbaib          #+#    #+#             */
-/*   Updated: 2025/06/27 02:07:55 by isadbaib         ###   ########.fr       */
+/*   Created: 2024/12/02 12:04:00 by isadbaib          #+#    #+#             */
+/*   Updated: 2024/12/02 12:04:09 by isadbaib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef JSONFT_H
-# define JSONFT_H
+#include "../../include/libft.h"
 
-# include "library_ft.h"
+void	*ft_bzero_gnl(void *obj, size_t size)
+{
+	size_t	i;
+	char	*o;
 
-#endif
+	o = obj;
+	i = 0;
+	if (!o || (long long)size <= 0)
+		return (NULL);
+	while (i < size)
+	{
+		o[i] = 0;
+		i++;
+	}
+	return (obj);
+}
