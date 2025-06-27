@@ -6,13 +6,13 @@
 /*   By: isadbaib <isadbaib@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/27 02:05:04 by isadbaib          #+#    #+#             */
-/*   Updated: 2025/06/27 02:07:55 by isadbaib         ###   ########.fr       */
+/*   Updated: 2025/06/27 15:12:28 by isadbaib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef JSONFT_H
 # define JSONFT_H
 
-# include "library_ft.h"
+# include "libraryft.h"
 
 #endif
